@@ -1,0 +1,522 @@
+// Question 2 //
+
+
+const personsName = "Eric";
+alert("Hello "+personsName+ ", would you like to learn some Python today?")
+
+// Question 3 //
+
+const personsName1 = "Muhammad Mousa"
+const inLower = (personsName1.toLowerCase() + "<br />");
+
+const inUpper = (personsName1.toUpperCase() + "<br />");
+
+document.write(inLower);
+document.write(inUpper);
+"<br />"
+"<br />"
+function inTitle(name) {
+    return name.charAt(0).toUpperCase() + name.slice(1);
+  }
+
+const capitalize = inTitle("mousa");
+document.write(capitalize);
+
+
+// Question 4 //
+let admiringPerson = "Elon Musk";
+console.log(admiringPerson + " once said, "+ "\"Patience is a virtue and I'm learning patience\"");
+
+// Question 5 //
+var famous_person = "Elon Musk";
+var quote = "\"Patience is a virtue and I'm learning patience\"";
+console.log(famous_person+ " once said,"+quote);
+
+
+// Question 6 //
+var name = "\t Muhammad \n Mousa";
+console.log(name);
+
+
+// Question 7 //
+console.log(5 + 3);
+console.log( 2 * 4);
+console.log( 32/4);
+console.log(24-16);
+
+
+// Question 8 & 9 //
+var favoriteNum = 216;   // this is my favourite number
+alert("My favourite number is "+favoriteNum);  //commenting assignment
+
+// Question 10 //
+const myFriends = ["Ali", "Asad", "Juniad", "Abdur Rehman", "Wajid", "Zohaib"];
+console.log(myFriends[0]);
+console.log(myFriends[1]);
+console.log(myFriends[2]);
+console.log(myFriends[3]);
+console.log(myFriends[4]);
+console.log(myFriends[5]);
+
+
+// Question 11  & 12//
+
+var msg = "You are my best friend";
+console.log(myFriends[0] + " "+ msg);
+console.log(myFriends[1] + " "+ msg);
+console.log(myFriends[2] + " "+ msg);
+console.log(myFriends[3] + " "+ msg);
+console.log(myFriends[4] + " "+ msg);
+console.log(myFriends[5] + " "+ msg);
+
+// Question 13 //
+const transportArr = ["HONDA Motorcycle", "KAWASAKI Motorcycle", "Suzuki Swift", "MG Car"];
+const msg1 = "I would like to own a ";
+console.log(msg1+ transportArr[0]);
+console.log(msg1+ transportArr[1]);
+console.log(msg1+ transportArr[2]);
+console.log(msg1+ transportArr[3]);
+
+// Question 14 & 15 & 16//
+
+let inviteMember = ["Asad ", "Rubina ", "Jahanzaib "];
+var inviteMsg = "invited on a formal dinner hosted By Muhammad Mousa";
+console.log(inviteMember[0] + inviteMsg);
+console.log(inviteMember[1] + inviteMsg);
+console.log(inviteMember[2] + inviteMsg);
+
+let notAttendingMsg = "invited on a formal dinner hosted By Muhammad Mousa but he refused to join";
+
+console.log(inviteMember[0]+notAttendingMsg);
+inviteMember[3] = "Subhan";
+console.log(inviteMember);
+var newInvitation = "Hi " + inviteMember[3]+ " you are invited on a dinner held on 2nd October 2022 so joined us";
+console.log(newInvitation);
+console.log(inviteMember);
+
+inviteMember.unshift( "Ayaz");
+inviteMember.splice(3, 0, "Muhammad");
+inviteMember.push("Khalid");
+console.log(inviteMember);
+console.log(inviteMember.length);
+
+for (let i = 0; i< inviteMember.length; i++){
+    console.log(inviteMember[i] + " "+inviteMsg);
+}
+
+inviteMember = ["Asad ", "Rubina ", "Jahanzaib "];
+var inviteMsg = "invited on a formal dinner hosted By Muhammad Mousa";
+notAttendingMsg = "invited on a formal dinner hosted By Muhammad Mousa but he refused to join";
+inviteMember[3] = "Subhan";
+var newInvitation = "Hi " + inviteMember[3]+ " you are invited on a dinner held on 2nd October 2022 so joined us";
+inviteMember.unshift( "Ayaz");
+inviteMember.splice(3, 0, "Muhammad");
+inviteMember.push("Khalid");
+var msg = "New invited person not coming on time";
+console.log(msg);
+console.log("Now we only have to invite two people for dinner");
+console.log(inviteMember.pop() + " sorry you are not invited on dinner");
+
+console.log(inviteMember.pop() + " sorry you are not invited on dinner");
+console.log(inviteMember.pop() + " sorry you are not invited on dinner");
+console.log(inviteMember.pop() + " sorry you are not invited on dinner");
+console.log(inviteMember.pop() + " sorry you are not invited on dinner");
+console.log(inviteMember.length +" "+ inviteMember + " still invited so plz come");
+console.log(inviteMember.splice(0, 2));
+console.log(inviteMember.length);
+
+
+// Question 17 //
+let favoritePlaces = ["Palm Jummerah", "New York", "Los Angeles", "California"];
+const newArr = favoritePlaces.slice(0).sort();
+console.log(newArr);
+console.log(favoritePlaces);
+const newArr3 = favoritePlaces.sort(function(a,b) {
+    return a.localeCompare(b);
+})
+console.log(newArr3);
+console.log(favoritePlaces);
+console.log(favoritePlaces.reverse());
+console.log(favoritePlaces.reverse());
+console.log(favoritePlaces.sort().reverse());
+
+console.log(favoritePlaces)
+
+
+// Question 18  & 19//
+console.log(inviteMember);
+console.log(inviteMember.length);
+
+// Question 20 & 21 // 
+
+let info = {mountains: ["K2", "Mount Everest", "Himalya"], 
+rivers: ["Jhelum", "Sindh", "Sutlaj"], 
+countries: ["Pakistan", "India", "USA"],
+ cities: ["Lahore", "Islamabad", "Karachi"], 
+ languages:["Urdu", "English", "French"]}
+
+ console.log(info);
+
+ // Question 22 //
+
+//  const myPersonalName = "Muhammad Mousa Khalid";
+//  myPersonalName = "Hello world";
+//  console.log(myPersonalName);   // Error question because const is blocked scope and can't be redeclared
+
+
+ // Question 23 //
+
+//PART 1
+
+ let car = 'subaru';
+
+console.log("Is car == 'subaru'? I predict True.")
+
+console.log(car == 'subaru')
+
+let car1 = 'Honda';
+
+console.log("Is car1 == 'Honda'? I predict True.")
+
+console.log(car1 == 'Honda')
+
+
+let name1 = 'Mousa';
+
+console.log("Is name1 == 'Mousa'? I predict True.")
+
+console.log(name1 == 'Mousa')
+
+
+let mountain = 'Everest';
+
+console.log("Is mountain == 'Everest'? I predict True.")
+
+console.log(mountain == 'Everest')
+
+let bike = 'Kawasaki';
+
+console.log("Is bike == 'Kawasaki'? I predict True.")
+
+console.log(bike == 'Kawasaki')
+
+//PART 2
+let sultan = 'Mehmet';
+
+console.log("Is sultan != 'Mehmet'? I predict False.")
+
+console.log(sultan == 'Ertugrul')
+
+let school = 'LGS';
+
+console.log("Is school != 'LGS'? I predict False.")
+
+console.log(school == 'Beaconhouse')
+
+let sharbat = 'Jam-e-Shirin';
+
+console.log("Is sharbat != 'Jam-e-Shirin'? I predict False.")
+
+console.log(sharbat == 'Roh-Afza')
+
+let city = 'Bhalwal';
+
+console.log("Is city != 'Bhalwal'? I predict False.")
+
+console.log(city == 'Lahore')
+
+let company = 'Amazon';
+
+console.log("Is company != 'Amazon'? I predict False.")
+
+console.log(company == 'EBAY')
+
+// Question 24 //
+var firstName = "Mousa";
+if (firstName == "mousa"){
+    console.log("It's True")
+} else{
+    console.log("Its false")
+}
+
+var lastName = "Khalid";
+if (lastName == "Khalid"){
+    console.log("It's True")
+} else{
+    console.log("Its false")
+}
+
+var site = "SEO-Checker";
+if (site.toLowerCase() == "SEO-Checker"){
+    console.log("ToLowerCase functions condition is right")
+} else {
+    console.log("Its condition is wrong")
+}
+
+var numbers1 = +prompt("Enter number here to make comparison");
+var numbers2 = 56678;
+if (numbers1 > numbers2){
+    console.log("It's True")
+} else if (numbers1 < numbers2){
+    console.log("Its true numbers1 is less than numbers2")
+} else if (numbers1 ==numbers2){
+    console.log("It;s equal to one anither")
+} else {
+    console.log("All conditionsare wrong nothing equal to one another")
+}
+
+var friends = "Asad";
+var friends1 = "Asad";
+var friends2 = "Sohail";
+if (friends == friends2 && friends2 == friends1){
+    console.log("Its wrong")
+} else if (friends == friends1 || friends2 == friends){
+    console.log("This is right")
+}
+
+const fruits = ["Banana", "Apple", "Pine Apple", "Mango"];
+console.log(fruits.includes("Apple"))
+
+
+console.log(fruits.includes("Orange"))
+
+// Question 25 //
+
+var alien_color = prompt("Enter color to check which point you got");
+if (alien_color == "green"){
+    console.log("The player earned 5 points")
+}
+
+var alien_color = prompt("Enter color to check which point you got");
+if (alien_color == "red"){
+    console.log("The player earned 5 points")
+}
+
+// Question 26 //
+
+var alien_color2 = prompt("Enter color to earn points");
+if (alien_color2 == "green"){
+    console.log("He got 5 points")
+} else if ( alien_color2 != "green"){
+    console.log("He just got earned 10 ponits");
+}
+
+// Question 27 //
+var alien_color3 = prompt("Enter color to earn points");
+if (alien_color3 == "green"){
+    console.log("He got 5 points");
+} else if ( alien_color3 == "yellow"){
+    console.log("He got 10 points")
+} else if ( alien_color3 == "red"){
+    console.log("He got 15 points")
+}
+
+// Question 28 //
+var stagesOfLife = prompt("Enter age here");
+if (stagesOfLife < 2){
+    console.log("the person is a baby");
+} else if (stagesOfLife ==2 || stagesOfLife < 4){
+    console.log("The person is a toddler");
+} else if (stagesOfLife == 4 || stagesOfLife < 13){
+    console.log("The person is a kid");
+} else if (stagesOfLife == 13 || stagesOfLife < 20){
+    console.log("the person is a teenager");
+} else if (stagesOfLife == 20 || stagesOfLife < 65){
+    console.log("The person is a adult");
+}
+
+
+
+
+// Question 29 //
+var favorite_fruits = ["Bananas", "Apple", "Mango"]
+if (favorite_fruits.includes("Bananas")){
+    console.log("I really like bananas");
+} if (favorite_fruits.includes("Apple")){
+    console.log("I really like apple");
+} if (favorite_fruits.includes("Mango")){
+    console.log("I really like mango");
+} if (favorite_fruits.includes("Orange")){
+    console.log("I really like oranges")
+} if (favorite_fruits.includes("Melon")){
+    console.log("I really like melon")
+}
+
+// Question 30 //
+var greetingLIst = ["Admin", "Eric", "John", "Michael", "Mousa"];
+for (let i = 0; i <= greetingLIst.length; i++){
+    if(greetingLIst[i] == "Admin"){
+    console.log("Hello " +greetingLIst[0] +", would you like to see a status report?")}
+    else if ( greetingLIst[i]=="Eric"){
+        console.log("Hello "+ greetingLIst[1]+ " thank you for logging again")
+    } else if ( greetingLIst[i]=="John"){
+        console.log("Hello "+ greetingLIst[2]+ " thank you for logging again")
+    } else if ( greetingLIst[i]=="Michael"){
+        console.log("Hello "+ greetingLIst[3]+ " thank you for logging again")
+    } else if ( greetingLIst[i]=="Mousa"){
+        console.log("Hello "+ greetingLIst[4]+ " thank you for logging again")
+    }
+} 
+
+
+
+// Question 31 //
+
+if (greetingLIst != null){             //Question 31
+    console.log("List is not empty")
+ }
+
+greetingLIst = greetingLIst.splice(5, 4);
+console.log(greetingLIst.length);
+if (greetingLIst.length == 0){
+    console.log("We need to find some users");
+}
+
+
+// Question 32 //
+current_users = ['Eric', 'Abdullah', 'Admin', 'Erin', 'Ever']
+new_users = ['Sarah', 'Mousa', 'PHIL', 'Ever', 'Rubina']
+
+function getMatch(a, b) {
+    var matches = [];
+
+    for ( var i = 0; i < a.length; i++ ) {
+        for ( var e = 0; e < b.length; e++ ) {
+            if ( a[i] === b[e] ) matches.push( a[i] );
+        }
+    } 
+    return matches;
+} 
+
+const ans = getMatch(current_users, new_users); 
+console.log(ans + " These user names have already been taken, so person have to enter new username")
+
+// Question 33 //
+for (let i =1; i <= 10; i++){
+    if (i == 1){
+        console.log(i+"st")
+    } else if (i == 2){
+        console.log(i+"nd")
+    } else if (i == 3){
+        console.log(i+"rd")
+    } else{
+        console.log(i+"th")
+    }
+}
+
+
+// QUestion 34 //
+var favoritePizza = ["Pepperoni", "Fajita", "Supreme"];
+for (var i = 0; i < favoritePizza.length; i++){
+    console.log("I like "+ favoritePizza[i] +" pizza")
+}
+console.log("I really love pizza!");
+
+// Question 35 //
+var animals = ["cat", "dog", "lion"];
+for (i = 0; i < animals.length; i++) {
+    console.log(animals[i] + " would make a great pet");
+}
+console.log("Any of these animals would make a great pet!");
+
+// Question 36 //
+
+function make_shirt(size, message) {
+    console.log("I really love this shirt because that " + size + " fitted me");
+    console.log(message)
+}
+make_shirt("medium", "I really love this fantastic shirt");
+
+// Question 36 //
+
+function make_shirt(size = "large", message = "I really love javascript") {
+    console.log("I really love this shirt because that " + size + " fitted me");
+    console.log(message);
+}
+make_shirt();
+
+// Question 37 //
+const describe_city = (city, country = "Pakistan") => {
+    console.log(city + " is in " + country);
+}
+describe_city("Karachi");
+describe_city("Islamabad");
+describe_city("Paris", "France");
+
+
+// Question 38 //
+const city_country = (cityName, country) => {
+    console.log(" '" + cityName, ",", country + "'");
+}
+
+city_country("Bhalwal", "Pakistan")
+
+// Question 39 //
+const make_album = (artistName, albumTitle, tracks = 0) => {
+    album = {
+        "artist": artistName,
+        "album": albumTitle,
+        "tracks": tracks
+    }
+
+    return album;
+}
+
+var callAlbum = make_album("ZaynMalik", "One Direction");
+console.log(callAlbum)
+var callAlbum = make_album("HarryStyles", "One Direction");
+console.log(callAlbum)
+var callAlbum = make_album("EdSheeran", "Fly HIgh", tracks = 8);
+console.log(callAlbum)
+
+// Question 40 //
+function show_magician(magicians) {
+    for (i = 0; i < magicians.length; i++) {
+        console.log(magicians)
+    }
+}
+
+magicians = ["Ainak Wala Jin", "Teller", "Harry"]
+for (i = 0; i < magicians.length; i++) {
+    console.log(magicians[i])
+}
+
+
+// Question 41  & 42//
+function make_great(magicians) {
+
+    for (i = 0; i < magicians.length; i++) {
+        console.log(magicians[i] + " the great")
+    }
+
+
+}
+
+make_great(magicians)
+const newMagicianArr = show_magician(magicians);
+console.log(newMagicianArr);
+
+// Question 43 //
+const make_sandwich = function (...items) {
+    console.log("\nI'll make you a great sandwich:");
+    for ( i = 0; i < items.length; i++){
+        console.log("  ...adding " + items[i] + " to your sandwich.")
+    }
+}
+make_sandwich('roast beef', 'cheddar cheese', 'lettuce', 'honey dijon');
+console.log("These sandwiches are ordered");
+
+// Question 44 //
+function make_car(manufacturer, model, ...options){
+    car_dict = {
+        'manufacturer': manufacturer,
+        'model': model,
+        }
+   for (option of options){
+    car_dict[option] = options;
+   }
+   return car_dict;
+}
+
+var my_outback = make_car('subaru', 'outback', color='blue', tow_package=true);
+console.log(my_outback)
